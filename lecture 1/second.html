@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+    <!-- jo style sheet neche aega has most priority
+    idar link neche hai internl style sheet ke so sabse recent layer link wala aya
+so that has more priority its like the upper layer-->
+    <style>
+        p{
+            color: blue;
+        }
+        /* even though idar sab p pe ayega but inline wala has the highest  pririty */
+    </style>
+    <link rel="stylesheet" href="second.css">
+</head>
+<body>
+    <hr>
+    <h1 style="color:navy;">Heading1</h1>
+    <p>Lorem ipsum dolor sit amet.</p><hr>
+    <!-- id se only ek he specific tag ko lagega style dont use spacing in id and classes
+    use hyphon-->
+    <h1 id="heading2">heading 2</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore.</p><hr>
+    <!-- meanwhile class means pure group of elements o he style lagega-->
+    <h1 class="heading">heading 3</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus, optio!</p><hr>
+    <h1 class="heading">heading 4</h1>
+    <p style="color: red;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, ab consequuntur!</p><hr>
+    <!-- for body color we will define it in second.css -->
+    <h1>body color</h1>
+    <hr>
+    <h1>also body color</h1>
+
+
+    <!-- INHERTIANCE hamko class ek he bana na hai but we want differenet shades so we
+        will write same class but definition calls will be different in second.css see their------ -->
+        <p class="text-danger">Lorem ipsum dolor sit amet consectetur.</p>
+        <p class="text-danger">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+        <h1 class="text-danger">Danger but dark shade</h1>
+        <!-- rules:
+        dont use camel cases in class use hyphon
+         -->
+</body>
+</html>

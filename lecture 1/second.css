@@ -1,0 +1,21 @@
+p {
+    color: rgb(0, 255, 4);
+}
+
+/* if we have to point to id we have to use hashtaghere before the id */
+#heading2{
+    color: rgb(0, 34, 255);
+}
+/* to point to a class use . before class */
+.heading{
+    color: chocolate;
+}
+/* idar . means we spicify ki text danger h1 wala ko this color */
+h1.text-danger{
+    color: rgb(154, 2, 2);
+}
+
+p.text-danger{
+    color: red+6
+    6325;
+}
