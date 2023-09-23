@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap" rel="stylesheet">
+</head>
+<body>
+    <h1>Selectors</h1>
+    <p>This is out of div</p>
+    <div class="outer-div">
+        <h3>below are inside of div</h3>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing.</p>
+        <p>Lorem, ipsum dolor.</p>
+        <div>
+            <h3>this is inside the outer div</h3>
+            <p>Lorem, ipsum.</p>
+            <p>Lorem ipsum dolor sit amet consectetur.</p>
+            <div>
+                <h3>this is inner inner div</h3>
+                <p>Lorem ipsum dolor sit amet consectetur.</p>
+                <p>Lorem, ipsum.</p>
+                
+            </div>
+        </div>
+    </div>
+    <div class="parent">
+        <div id="div1">this is 1st sibling</div>
+        <p>this is 2nd inner sibling</p>
+        <p>this is 3rd inner sibling</p>
+        <p>this is 4th inner sibling</p>
+        <div>
+            <!-- ye div jabki hai sibling par jo iska p hai vo upar wale
+            div1 ka sibline nahi vo sibling ka child hai -->
+            <p>this is chilld of a sibling so this is wont get any style</p>
+        </div>
+    </div>
+
+    <!-- <div class="border-div">
+        <h2>CLICK HERE</h2>
+    </div> -->
+    
+    
+    <button type="button" class="btn">SUBMIT</button>
+    <!-- # means kidr be nahi jayega -->
+    <a href="#" class="btn">SUBMIT</a>
+    
+</body>
+</html>
