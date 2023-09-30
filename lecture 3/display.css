@@ -1,0 +1,44 @@
+#div1{
+   background-color: navajowhite;
+   color: black;
+   width: 50%;
+
+}
+
+#div2{
+    background-color: aquamarine;
+    color: green;
+    width: 50%;
+}
+
+div{
+    /* jitni jagah chahiye utnli lega but wont give attention to width and height,padding ,margin ,etc
+     */
+     display: inline-block;
+     /* ------------------------------------------ */
+     /* inline block comes between block and inline , takes width ,height, padding and
+     margin into consideration */
+     /* display: inline-block */
+     /* ------------------------------------------- */
+     /* display block means pura width lega
+     /* in case of inline block dont leave space and even dont go on next line because in some cases it may not come
+     on same line*/
+     
+     
+     /* display: block */
+}
+#div3{
+    background-color: navajowhite;
+    color: black;
+    width: 50%;
+ 
+ }
+ 
+ #div4{
+     background-color: aquamarine;
+     color: green;
+     width: 50%;
+     /* agar number of words are different we use vertical align */
+     vertical-align: top;
+ }
+ 

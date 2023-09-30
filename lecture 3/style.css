@@ -1,0 +1,65 @@
+/* This is style resetting it reset the whole style of the body like margin padding and whatever style we want to reset */
+/* this is can be applied by using this syntax
+
+either
+
+*{
+    declaration block
+}
+however it will reset every single element style even which are inherrited like headings , etc
+
+for a work around we use ---->
+*/
+
+
+
+body{
+    margin: 0;
+    padding: 0;
+    /* font famiy there is 3 fonts because if first doesnt works the other will be applied this
+    is called as font stack */
+    font-family: 'Courier New', Courier, monospace;
+}
+
+
+
+/* outer inner is commented out because it is conflicting with horzintal scroll it may still cause scroll
+due to the heigth of the page so it may still scroll  */
+.outer{
+    border: 1px outset red;
+    width: 500px;
+}
+
+.inner {
+    border: 2px inset black;
+    /* % means just immediate wale parent ka itna percent
+    like 500px width ka 60% */
+    width: 60%;
+}
+
+.vwborder{
+    border: 2px solid purple;
+    /* vh means viewport height like if we use heigth: 50vh
+    that means viewport ke jitna but uska 50 percent height*/
+    height: 25vw;
+    width: 25vw;
+}
+
+/* Agar ham aise 10px dalenge yane the whole border element will have 100vh that is 100 percent of viewpoer size 
+and also the both sides of border i.e'
+100+10+10 total 120
+that means ki border will got outiside of the page because 100vh is only for content. border alag se leta hai space 
+so we use * tag which wil affect all the borders*/
+
+*{
+    /* inclusive of border yaane ab vo 100vh me borderab border be include hoga */
+    box-sizing: border-box;
+    /* default hota hai content-box jo box model ke content ko he space allot kartra hai exclusive of border */
+}
+
+/* we can use 100vw but it can still cause scroll because it exclude the scroll bar 
+but percent includes it too */
+.viewport{
+    border: 10px solid black;
+    width: 100%;
+}
