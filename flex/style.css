@@ -1,0 +1,61 @@
+/* flex works on child and immediate parent */
+.parent{
+    border: 2px solid black;
+    display: flex;
+    width: 350px;
+}
+
+
+/* if space occupied by the contents is more then the assigned widht it automatically adjusts 
+only upto certain size*/
+.child{
+    border: 2px solid black;
+    width: 100px;
+    margin: 10px;
+    padding: 5px;
+}
+
+.parent1{
+    border: 2px solid black;
+    display: flex;
+    width: 350px;
+    flex-direction: row-reverse;
+}
+
+.parent2{
+    border: 2px solid black;
+    display: flex;
+    width: 500px;
+    flex-direction: column;
+}
+
+.parent3{
+    border: 2px solid black;
+    display: flex;
+    width: 200px;
+    /* flex-direction: row;
+    flex-wrap: wrap; */
+    flex-flow: row wrap;
+}
+
+
+.fparent{
+    border: 2px solid black;
+    display: flex;
+    width: 800px;
+    height: 400px;
+    /* flex-direction: row;
+    flex-wrap: wrap; */
+    flex-flow: row wrap;
+}
+
+.fchild{
+    
+}
+/* justify content works on main axis 
+
+    allign items works on cross axis
+    justify ka start is screen ka left wala start
+    and flex start works onflex ka start
+*/
+
