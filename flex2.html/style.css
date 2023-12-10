@@ -1,0 +1,74 @@
+/* .parent{
+    display: flex;
+    width: 98vw;
+    height: 97vh;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    
+} */
+
+.parent{
+    display: flex;
+    flex-direction: row;
+    width: 500px;
+    border: 2px solid black;
+}
+
+.child
+{
+  border: 2px solid black; 
+}
+
+/* order se we can change the sequence default order is 0
+to go left change the order to negative to go right change the order to positive */
+#child-2{
+    order: -1;
+}
+
+#child-3{
+    order: 1;
+}
+
+/* flex-grow basically assigns the remaining space 
+to the sepcific id
+it works on ratio
+ex:- the grow of 3 will give the 3 parts of that remaining space to that id */
+
+#child-4
+{
+    flex-grow: 3;
+}
+
+#child-1{
+    flex-grow: 1;
+}
+
+.fparent{
+    display: flex;
+    border: 2px solid black;
+    width: 290px;
+    
+}
+.fchild{
+    border: 2px solid black;
+    width: 100px;
+    flex-shrink: 0;
+}
+
+#fchild1{
+    flex-shrink: 1;
+}
+
+
+
+.bparent{
+    display: flex;
+    border: 2px solid black;
+    width: 500px;
+}
+
+.bchild{
+    border: 2px solid black;
+    flex-basis: 50%;
+}
